@@ -1,13 +1,11 @@
-
-config:
-  import: "configserver"
-
 server:
   port: 8761
 
 spring:
   application:
     name: service-registry
+  config:
+    import: "optional:configserver:http://localhost:8888"
 
 eureka:
   client:
