@@ -1,11 +1,8 @@
-server:
-  port: 9001
-
 spring:
   application:
     name: service-registry
   config:
-    import: "configserver"
+    import: "configserver:"
   cloud:
     config:
       uri: http://10.148.0.10:9000
